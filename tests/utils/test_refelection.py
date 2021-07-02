@@ -22,3 +22,8 @@ class TestReflectionUtils(BaseTestCase):
         self.assertIsNotNone(
             import_and_get_class('ploigos_step_runner.step_implementers.container_image_static_compliance_scan', 'OpenSCAP')
         )
+
+    def test_import_and_get_new_class_class_exists_in_module(self):
+        self.assertIsNotNone(
+            import_and_get_class('ploigos_step_runner.step_implementers.generate_and_publish_workflow_report', 'HelloWorld')
+        )

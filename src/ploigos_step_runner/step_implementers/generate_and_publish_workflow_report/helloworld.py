@@ -26,7 +26,7 @@ DEFAULT_CONFIG = {
    'greeting' : "hello world"
 }
 
-REQUIRED_CONFIG_OR_PREVIOUS_STEP_RESULT_ARTIFACT_KEYS = []
+REQUIRED_CONFIG_OR_PREVIOUS_STEP_RESULT_ARTIFACT_KEYS = ['greeting']
 
 class HelloWorld(StepImplementer):  
     """StepImplementer for the generate-and-publish-workflow-report step for HelloWorld.
